@@ -1,0 +1,79 @@
+.main-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &__container {
+    @include flex(column, start, end, nowrap);
+  }
+  &__burger-btn {
+    height: 15px;
+  }
+  &__burger-btn--active &__burger-span {
+    display: block;
+    width: 68px;
+    height: 3px;
+    background-color: #57463a;
+    transform: rotate(45deg);
+    &::before {
+      content: "";
+      display: block;
+      width: 68px;
+      height: 3px;
+      background-color: #57463a;
+      position: absolute;
+      bottom: 6px;
+      transform: rotate(90deg);
+      top: 0px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 68px;
+      height: 3px;
+      background-color: #57463a;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__burger-span {
+    display: block;
+    width: 68px;
+    height: 3px;
+    background-color: #57463a;
+    transition-duration: 1s;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 68px;
+      height: 3px;
+      background-color: #57463a;
+      position: absolute;
+      bottom: 6px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 68px;
+      height: 3px;
+      background-color: #57463a;
+      position: absolute;
+      top: 6px;
+    }
+  }
+
+  &__navigation {
+  }
+
+  &__menu {
+  }
+
+  &__menu-item {
+  }
+
+  &__logo {
+    display: none;
+  }
+}
+.container {
+}

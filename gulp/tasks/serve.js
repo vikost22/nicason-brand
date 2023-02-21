@@ -1,8 +1,7 @@
 export const serve = () =>{
     app.plugins.browserSync.init({
         server: {
-            // baseDir: `${app.path.build.html}`
-            baseDir: "./"
+            baseDir: `${app.path.build.html}`
         }
     });
 }

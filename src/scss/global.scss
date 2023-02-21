@@ -1,0 +1,14 @@
+body {
+  background-color: #e5e5e5;
+  font-family: $open-font;
+}
+.container{
+    min-width: 320px;
+    padding-right: 10px;
+    padding-left: 10px;
+    @include marginCenter;
+    @include breakpoint-mf($smBrP){
+        max-width: 1170px;
+    }
+}
+
