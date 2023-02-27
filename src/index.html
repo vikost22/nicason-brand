@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    @@include("./html/head.html", {
-        "title": "Nikason Brand"
-    })
-</head>
-<body>
+  <head>
+    @@include("./html/head.html", { "title": "Nikason Brand" })
+  </head>
+  <body>
     @@include("./html/header.html")
+    <main>
+      <section class="main-intro">
+        <img
+          src="@img/intro/main-intro.png"
+          width="375"
+          height="415"
+          alt=""
+          class="main-intro__foto"
+        />
+        <div class="container main-intro__container">
+          <p class="main-intro__subtitle">Столярная мастерская NIKASON BRAND</p>
+          <h2 class="main-intro__title section-titel">
+            Изготовление и реставрация мебели
+          </h2>
+          <p class="main-intro__slogan">
+            Авторская мебель ручной работы, сделанная c душой и трепетом.
+          </p>
+          <a href="" class="main-intro__btn page-btn">Смотреть услуги</a>
+          <ul class="main-intro__contacts contacts-links">
+            <li class="contacts-links__contact">
+              <a href="#" class="contacts-links__contact-link">
+                <img
+                  src="@img/icons/telegram-brown.svg"
+                  width="24"
+                  height="20"
+                  alt=""
+                  class="contacts-links__link-icon"
+              /></a>
+            </li>
+            <li class="contacts-links__contact">
+              <a href="#" class="contacts-links__contact-link">
+                <img
+                  src="@img/icons/instagram-brown.svg"
+                  width="22"
+                  height="22"
+                  alt=""
+                  class="contacts-links__link-icon"
+              /></a>
+            </li>
+            <li class="contacts-links__contact">
+              <a href="#" class="contacts-links__contact-link">
+                <img
+                  src="@img/icons/whatsapp-brown.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                  class="contacts-links__link-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     @@include("./html/footer.html")
     <script src="./js/scripts.min.js"></script>
-</body>
+  </body>
 </html>

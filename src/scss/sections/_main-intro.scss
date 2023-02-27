@@ -1,0 +1,88 @@
+.main-intro {
+  @include flex(column-reverse, start, center, wrap);
+  padding-top: 38px;
+  position: relative;
+  @media (min-width: 803px) {
+    padding-top: 0;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: nowrap;
+  }
+
+  &__foto {
+    width: 100%;
+    object-fit: cover;
+    @media (min-width: 803px) {
+      flex: 0 0 50%;
+      height: 774px;
+    }
+  }
+
+  &__container {
+  }
+
+  &__subtitle {
+    @include textStyle(16px, 150%, 300, $textColor);
+    max-width: 200px;
+    margin-left: 28px;
+    @media (min-width: 803px) {
+      max-width: none;
+      margin-top: 194px;
+    }
+  }
+
+  &__title {
+    line-height: 38.5px;
+    margin-top: 76px;
+    margin-left: 25px;
+    @media (min-width: 803px) {
+      margin-left: 28px;
+      margin-top: 17px;
+      max-width: none;
+    }
+  }
+
+  &__slogan {
+    @include textStyle($mainTextSize, 150%, 300, $textColor);
+    max-width: 311px;
+    margin-top: 39px;
+    margin-left: 28px;
+    @media (min-width: 803px) {
+      max-width: none;
+    }
+  }
+
+  &__btn {
+    margin-left: 28px;
+    margin-top: 21px;
+    @media (min-width: 803px) {
+      margin-left: 32px;
+      margin-top: 70px;
+    }
+  }
+
+  &__contacts {
+    margin-top: 77px;
+    margin-bottom: 40px;
+    column-gap: 30px;
+    margin-left: 28px;
+    @media (min-width: 803px) {
+      margin-left: 29vw;
+      margin-top: 94px;
+    }
+    .contacts-links__contact {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #715b4b;
+      &:first-child {
+        .contacts-links__link-icon {
+          height: 11px;
+        }
+      }
+    }
+    .contacts-links__link-icon {
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
