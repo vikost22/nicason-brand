@@ -1,14 +1,57 @@
 body {
   background-color: #e5e5e5;
-  font-family: $open-font;
+  font-family: $mainFont;
 }
-.container{
-    min-width: 320px;
-    padding-right: 10px;
-    padding-left: 10px;
-    @include marginCenter;
-    @include breakpoint-mf($smBrP){
-        max-width: 1170px;
-    }
+.container {
+  min-width: 320px;
+  padding-right: 10px;
+  padding-left: 10px;
+  @include marginCenter;
+  @media (min-width: 803px) {
+    max-width: 1170px;
+  }
 }
 
+.contacts-links {
+  @include flex(row, start, start, nowrap);
+  &__contact-link {
+    @include flex(row, center, center, wrap);
+    width: 100%;
+    height: 100%;
+  }
+  &__contact {
+    @include flex(row, center, center, wrap);
+    width: 52px;
+    height: 52px;
+    border: 1px solid #f6f6f6;
+    border-radius: 50%;
+    &:first-child {
+      // display: none;
+      @media (min-width: 803px) {
+        display: flex;
+      }
+      a {
+        position: relative;
+        right: 2px;
+      }
+    }
+  }
+}
+
+.section-titel {
+  @include textStyle($smTitel, 0, 400, $titelColor);
+  font-family: $titelFont;
+  @media (min-width: 803px) {
+    font-size: $lrTitel;
+  }
+}
+
+.page-btn {
+  @include textStyle(16px, 150%, 400, #f6f6f6);
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 245px;
+  background-color: $accentColor;
+  text-align: center;
+}

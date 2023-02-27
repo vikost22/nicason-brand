@@ -1,24 +1,24 @@
 .main-header {
   padding-top: 32px;
   padding-bottom: 32px;
-  @include breakpoint-mf($smBrP) {
+  @media (min-width: 803px) {
     position: relative;
     padding-top: 63px;
     padding-bottom: 51px;
   }
   &__container {
     @include flex(column, start, end, nowrap);
-    @include breakpoint-mf($smBrP) {
+    @media (min-width: 803px) {
       display: block;
     }
   }
   &__burger-btn {
     height: 34px;
-    @include breakpoint-mf($smBrP) {
+    @media (min-width: 803px) {
       display: none;
     }
   }
- 
+
   &__burger-btn--active &__burger-span {
     display: block;
     width: 34px;
@@ -82,10 +82,11 @@
 
   &__menu {
     position: absolute;
-    right: -200px;
+    top: -230px;
+    right: 0;
     margin-top: 20px;
     transition-duration: 1s;
-    @include breakpoint-mf($smBrP) {
+    @media (min-width: 803px) {
       position: static;
       margin-top: 0;
       @include flex(row, start, start, nowrap);
@@ -93,7 +94,7 @@
     }
   }
   &__menu--active {
-    right: 0;
+    top: 0;
   }
   &__menu-item {
     background-color: #a1b29f;
@@ -101,7 +102,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
-    @include breakpoint-mf($smBrP) {
+    @media (min-width: 803px) {
       padding: 0;
       min-width: 0;
       background-color: transparent;
@@ -109,27 +110,27 @@
     }
 
     &:nth-child(2) {
-      @include breakpoint-mf($smBrP) {
+      @media (min-width: 803px) {
         margin-right: auto;
       }
     }
     &:nth-child(3) {
-      @include breakpoint-mf($smBrP) {
+      @media (min-width: 803px) {
         margin-right: 147px;
       }
     }
   }
-&__link {
-  @include textStyle(16px, 150%, 400, #323232);
-}
-&__logo {
-  display: none;
-  @include breakpoint-mf($smBrP) {
-    display: block;
-    position: absolute;
-    top: 31px;
-    left: 50%;
-    margin-left: -43px;
+  &__link {
+    @include textStyle(16px, 150%, 400, #323232);
   }
-}
+  &__logo {
+    display: none;
+    @media (min-width: 803px) {
+      display: block;
+      position: absolute;
+      top: 31px;
+      left: 50%;
+      margin-left: -43px;
+    }
+  }
 }
