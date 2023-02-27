@@ -1,0 +1,110 @@
+.main-production {
+  padding-bottom: 90px;
+  @media (min-width: 803px) {
+    padding-bottom: 160px;
+  }
+  &__container {
+  }
+
+  &__title {
+    line-height: 54px;
+    margin-left: 25px;
+    max-width: 290px;
+    @media (min-width: 803px) {
+      line-height: 72px;
+      margin-left: 0;
+      max-width: none;
+    }
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    justify-content: center;
+    margin-top: 61px;
+    @media (min-width: 620px) {
+      grid-template-columns: repeat(4, 150px);
+    }
+    @media (min-width: 803px) {
+      grid-template-columns: repeat(2, 290px);
+    }
+    @media (min-width: 1180px) {
+      grid-template-columns: repeat(4, 290px);
+    }
+  }
+
+  &__pruduct {
+    padding-top: 17px;
+    padding-bottom: 20px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    @include flex(column, end, center, wrap);
+    @media (min-width: 803px) {
+      padding-top: 56px;
+      padding-bottom: 47px;
+    }
+    &:nth-child(odd) {
+      border-left: 1px solid #000000;
+    }
+    &:nth-child(1) {
+      padding-top: 42px;
+    }
+    &:nth-child(2) {
+      padding-top: 42px;
+    }
+    &:nth-child(3) {
+      @media (min-width: 620px) {
+        border-left: none;
+      }
+      @media (min-width: 803px) {
+        border-left: 1px solid #000000;
+      }
+      @media (min-width: 1180px) {
+        border-left: none;
+        border-bottom: 1px solid #000000;
+      }
+    }
+    &:nth-child(4) {
+      @media (min-width: 1180px) {
+        border-bottom: 1px solid #000000;
+      }
+    }
+    &:nth-child(5) {
+      @media (min-width: 620px) {
+        border-bottom: 1px solid #000000;
+      }
+    }
+    &:nth-child(6) {
+      @media (min-width: 620px) {
+        border-bottom: 1px solid #000000;
+      }
+      @media (min-width: 1180px) {
+        border-right: none;
+      }
+    }
+    &:nth-child(7) {
+      border-bottom: 1px solid #000000;
+      @media (min-width: 620px) {
+        border-left: none;
+      }
+      @media (min-width: 803px) {
+        border-left: 1px solid #000000;
+        border-top: none;
+      }
+    }
+    &:nth-child(8) {
+      border-bottom: 1px solid #000000;
+      @media (min-width: 803px) {
+        border-top: none;
+      }
+    }
+  }
+
+  &__image {
+  }
+
+  &__product-name {
+    margin-top: 20px;
+    @include textStyle($mainTextSize, 18px, 300, $textColor);
+  }
+}
