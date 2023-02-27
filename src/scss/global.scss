@@ -38,7 +38,7 @@ body {
   }
 }
 
-.section-titel {
+.section-title {
   @include textStyle($smTitel, 0, 400, $titelColor);
   font-family: $titelFont;
   @media (min-width: 803px) {

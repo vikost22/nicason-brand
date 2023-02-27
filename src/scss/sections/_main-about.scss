@@ -1,0 +1,50 @@
+.main-about {
+  padding: 90px 0;
+  @media (min-width: 803px) {
+    padding: 160px 0;
+  }
+
+  &__title {
+    line-height: 38px;
+    max-width: 208px;
+    margin-left: 25px;
+    @media (min-width: 620px) {
+      max-width: none;
+    }
+    @media (min-width: 803px) {
+      margin-left: 0;
+    }
+  }
+
+  &__offers {
+    @include flex(row, center, start, wrap);
+    row-gap: 40px;
+    column-gap: 40px;
+    margin-top: 60px;
+    @media (min-width: 803px) {
+        column-gap: 118px;
+        margin-top: 100px;
+    }
+  }
+
+  &__offer {
+    @include textStyle($mainTextSize, 27px, 300, $textColor);
+    max-width: 280px;
+    text-align: center;
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 300px;
+      background-color: #715b4b;
+      position: relative;
+      right: 10px;
+      margin-top: 10px;
+      @media (min-width: 803px) {
+        width: 360px;
+        right: 40px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
