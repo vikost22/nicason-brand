@@ -61,7 +61,7 @@
       }
       @media (min-width: 1180px) {
         border-left: none;
-        border-bottom: 1px solid #000000;
+        // border-bottom: 1px solid #000000;
       }
     }
     &:nth-child(4) {
@@ -79,7 +79,7 @@
         border-bottom: 1px solid #000000;
       }
       @media (min-width: 1180px) {
-        border-right: none;
+        // border-right: none;
       }
     }
     &:nth-child(7) {
@@ -90,6 +90,10 @@
       @media (min-width: 803px) {
         border-left: 1px solid #000000;
         border-top: none;
+      }
+      @media (min-width: 1180px) {
+        border-left: none;
+        border-top: 1px solid #000000;
       }
     }
     &:nth-child(8) {

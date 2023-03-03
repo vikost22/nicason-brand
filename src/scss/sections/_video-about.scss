@@ -7,15 +7,17 @@
 .video-about__container {
 }
 .video-about__title {
+  margin-left: 27px;
   line-height: 48px;
   @media (min-width: 803px) {
-    line-height: 72px;
+  margin-left: 0;
+  line-height: 72px;
   }
 }
 
 .video-about__video {
   width: 100%;
-  max-width: 1060px;
+  max-width: 1160px;
   margin-top: 60px;
   @media (min-width: 803px) {
     display: block;
