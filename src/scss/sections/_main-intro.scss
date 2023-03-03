@@ -7,6 +7,8 @@
     flex-direction: row;
     align-items: start;
     flex-wrap: nowrap;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
   }
 
   &__foto {
@@ -19,8 +21,11 @@
       flex-shrink: 0;
     }
   }
-
   &__container {
+    margin-left: 0;
+  }
+  &__content {
+    max-width: 590px;
   }
 
   &__subtitle {
@@ -29,7 +34,7 @@
     margin-left: 28px;
     @media (min-width: 803px) {
       max-width: none;
-      margin-top: 194px;
+      margin-top: 198px;
     }
   }
 
