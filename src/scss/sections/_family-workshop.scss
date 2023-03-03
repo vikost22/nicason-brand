@@ -1,0 +1,63 @@
+.family-workshop {
+  padding-bottom: 90px;
+  @media (min-width: 803px) {
+    padding-bottom: 160px;
+  }
+}
+.container {
+}
+.family-workshop__container {
+  max-width: 595px;
+  margin-left: 0;
+}
+.family-workshop__title {
+  line-height: 48px;
+  margin-left: 25px;
+  margin-bottom: 60px;
+}
+.family-workshop__content {
+  @media (min-width: 803px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: #ebeeeb;
+  }
+}
+.family-workshop__foto {
+  width: 100%;
+  object-fit: cover;
+  @media (min-width: 803px) {
+    min-height: 355px;
+  }
+}
+.family-workshop__members {
+  @include textStyle(24px, 36px, 400, #000000);
+  font-family: $titelFont;
+  margin-top: 60px;
+  margin-left: 25px;
+  @media (min-width: 803px) {
+    margin-top: 0px;
+  }
+}
+.family-workshop__member-description {
+  @include textStyle($mainTextSize, 27px, 300, #000000);
+  margin-top: 4px;
+  margin-left: 25px;
+  &:nth-child(3) {
+    margin-top: 24px;
+  }
+  @media (min-width: 1268px) {
+    margin-top: 40px;
+  }
+}
+
+.family-workshop__btn {
+  margin-left: 28px;
+  margin-top: 30px;
+  @media (min-width: 803px) {
+    margin-top: 26px;
+  }
+  @media (min-width: 1268px) {
+    margin-top: 52px;
+  }
+}
