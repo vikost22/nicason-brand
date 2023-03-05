@@ -1,0 +1,32 @@
+.workshop-intro {
+  background-image: url("../img/workshop/intro/workshop-intro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 249px;
+  padding-bottom: 167px;
+
+  @media (min-width: 803px) {
+    padding-top: 268px;
+    padding-bottom: 104px;
+  }
+  &__slogan {
+    @include textStyle(32px, 48px, 400, #f6f6f6);
+    font-family: $titleFont;
+    margin-left: 38px;
+    margin-right: 12px;
+    @media (min-width: 803px) {
+      font-size: 48px;
+      line-height: 72px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    @include marginCenter;
+    @media (max-width: 803px) {
+      width: 300px;
+      margin-top: 62px;
+    }
+    margin-top: 97px;
+  }
+}

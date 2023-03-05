@@ -1,0 +1,64 @@
+.guarantee {
+  position: relative;
+  padding: 90px 0 150px 0;
+  @media (min-width: 803px) {
+    padding-top: 200px;
+    padding-bottom: 210px;
+  }
+  &__title {
+    line-height: 48px;
+    margin-left: 25px;
+    @media (min-width: 803px) {
+      position: absolute;
+      width: 658px;
+      top: 306px;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-328px);
+    }
+  }
+
+  &__border {
+    border: 7px solid $accentColor;
+    position: relative;
+    padding: 5px;
+    margin-top: 60px;
+    @media (min-width: 803px) {
+      margin-top: 0;
+    }
+  }
+
+  &__content {
+    padding-left: 14px;
+    padding-right: 7px;
+    border: 1px solid #715b4b;
+    @media (min-width: 803px) {
+      padding-left: 108px;
+      padding-right: 130px;
+    }
+  }
+
+  &__text {
+    @include textStyle(16px, 24px, 300, #000000);
+    margin-top: 90px;
+    margin-bottom: 140px;
+    @media (min-width: 803px) {
+      font-size: 24px;
+      line-height: 36px;
+      margin-top: 276px;
+      margin-bottom: 179px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    right: 7px;
+    bottom: 64px;
+    @media (min-width: 803px) {
+      width: 152px;
+      height: 150px;
+      right: 62px;
+      bottom: 32px;
+    }
+  }
+}
